@@ -2,7 +2,7 @@
 local M = {}
 
 M.general = {
-  n = {
+  n = { -- Add mappings for nomal mode when the file is not being edited
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
 
     --  format with conform
@@ -14,7 +14,7 @@ M.general = {
     }
 
   },
-  v = {
+  v = {  -- Add mappings for visual mode
     [">"] = { ">gv", "indent"},
   },
 }
