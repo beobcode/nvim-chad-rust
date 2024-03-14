@@ -13,5 +13,13 @@ for _, lsp in ipairs(servers) do
   }
 end
 
--- 
+--
 -- lspconfig.pyright.setup { blabla}
+
+lspconfig.rust_analyzer.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    cmd = {
+      "rustup", "run", "stable", "rust-analyzer",
+  }
+}
