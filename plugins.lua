@@ -46,7 +46,13 @@ local plugins = {
       require "custom.configs.conform"
     end,
   },
-
+  {
+    "nvim-treesitter/playground",
+    lazy = true,
+    dependencies = {
+      "nvim-tree/nvim-tree.lua"
+    }
+  }
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
